@@ -1,0 +1,36 @@
+---
+slug: sample-project-acorn
+title: "Real-time portfolio rebalancing for a Tier-1 Asset Manager"
+publishedAt: 2026-03-12
+client:
+  pseudonym: "Tier-1 Asset Manager"
+  logo: null
+  industry: "Asset Management"
+tech: ["Python", "AWS Bedrock", "Claude", "Snowflake", "Airflow"]
+outcomes:
+  - metric: "Rebalancing cycle time"
+    before: "6 hours"
+    after: "12 minutes"
+  - metric: "Trades per analyst per day"
+    delta: "+340%"
+timeline:
+  start: "2025-09"
+  end: "2026-02"
+  teamSize: 6
+tags: ["GenAI", "RAG", "Workflow Automation"]
+hero: "./assets/hero.png"
+screenshots: []
+featured: true
+challenge: |
+  The client's portfolio managers were rebalancing books overnight on a batch
+  pipeline that frequently exceeded its six-hour window, leaving analysts
+  starting their day reacting to stale positions.
+solution: |
+  We replaced the batch with a streaming rebalancing engine. A retrieval-augmented
+  Claude agent reads the day's filings and earnings transcripts, proposes
+  rebalances against the firm's risk model, and surfaces them in a HITL UI for
+  the portfolio manager to approve in one click.
+---
+
+The full narrative of the engagement lives below the frontmatter and can span
+multiple paragraphs of MDX content.
